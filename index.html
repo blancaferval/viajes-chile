@@ -115,7 +115,7 @@
         </section>
 
 
-        <section id="destacados" class="my-5">
+        <section id="destacados" class="my-5 py-3">
             <div>
                 <h4 class="text-center text-light">DESTACADOS</h4>
                 <hr>
@@ -167,28 +167,33 @@
 
         <section id="contacto">
             
-                <div>
-
+                <div class="my-5">
+                    <h4 class="text-center text-light">CONTACTO</h4>
                 </div>
+
                 <div>
-                    <form class="container">
+                    <form class="container mb-4 pb-4">
                         <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label text-light">Email</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <label for="exampleInputEmail1" class="form-label text-light">Nombre</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 
                         </div>
                         <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label text-light">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
+                          <label for="exampleInputPassword1" class="form-label text-light">Asunto</label>
+                          <input type="text" class="form-control" id="exampleInputPassword1">
                         </div>
                         <div class="mb-3">
                             <label for="" class="form-label text-light">Mensaje</label>
-                            <textarea class="form-control" name="Mensaje" id="" rows="10"></textarea>
+                            <textarea class="form-control" name="Mensaje" id="" rows="8"></textarea>
                           </div>
 
-                        <button 
+                        <button id="enviar"
                         type="submit" 
-                        class="btn btn-info text-light">
+                        class="btn btn-info text-light"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="right"
+                        data-bs-title="Presiona para enviar tu mensaje"
+                        >
                         Enviar
                         </button>
                       </form>
@@ -197,11 +202,43 @@
 
         </section>
     
-      </main>
+    </main>
 
 
-    <footer>
+    <footer class="container-fluid bg-info py-4 footer-wrap">
+      <div class="row justify-content-between align-items-baseline">
 
+        <div class="col-12 col-sm-auto me-auto">
+          <h2 class="text-light">VIAJES CHILE</h2>
+        </div>
+
+        <div class="col-12 col-sm-auto ms-auto">
+          <i
+            data-bs-toggle="tooltip"
+            data-placement="top"
+            title="@viajeschile"
+            class="fa-brands fa-2x me-1 fa-github text-light"
+            ></i>
+          <i
+            data-bs-toggle="tooltip"
+            data-placement="top"
+            title="@viajeschile"
+            class="fa-brands fa-2x me-1 fa-linkedin text-light"
+          ></i>
+          <i
+            data-bs-toggle="tooltip"
+            data-placement="top"
+            title="@viajeschile"
+            class="fa-brands fa-2x me-1 fa-facebook text-light"
+          ></i>
+          <i
+            data-bs-toggle="tooltip"
+            data-placement="top"
+            title="@viajeschile"
+            class="fa-brands fa-2x me-1 fa-twitter text-light"
+          ></i>
+        </div>
+      </div>
     </footer>
 
 

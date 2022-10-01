@@ -7,3 +7,7 @@ $(document).scroll(function () {
   
     y > 550 ? $("nav").addClass("nav-black") : $("nav").removeClass("nav-black");
   });
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  
