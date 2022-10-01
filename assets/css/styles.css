@@ -3,6 +3,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-@media screen {
-    
+@media screen and (max-width: 765) {
+    .display {
+        display: none;
+    }
 }
+
+.nav-black {
+    background-color: purple;
+    opacity: 0.9;
+    color: white;
+  }
