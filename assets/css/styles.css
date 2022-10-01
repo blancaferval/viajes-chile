@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-@media screen and (max-width: 765) {
+@media screen and (max-width: 765px) {
     .display {
         display: none;
     }
